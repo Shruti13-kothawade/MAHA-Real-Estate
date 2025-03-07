@@ -1,0 +1,262 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Real Estate</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon" />
+    <link
+      href="{% static 'assets/img/apple-touch-icon.png' %}"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="{% static 'assets/vendor/animate.css/animate.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: EstateAgency
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <!-- ======= Header/Navbar ======= -->
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button
+        class="navbar-toggler collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarDefault"
+        aria-controls="navbarDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="index.html"
+        >MAHA-<span class="color-b">Real Estate</span></a
+      >
+
+      <div
+        class="navbar-collapse collapse justify-content-center"
+        id="navbarDefault"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">login</a>
+          </li>
+
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="signup.html">Signup</a>
+            </li> -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <button
+          type="button"
+          class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+        >
+          <i class="bi bi-search"></i>
+        </button> -->
+    </div>
+  </nav>
+  <!-- End Header/Navbar -->
+  <br />
+  <br />
+  <br />
+  <br /><br />
+  <br />
+  <br />
+  <br />
+  <head>
+    <title>Agreement for Sale</title>
+  </head>
+  <body>
+    <h1>Agreement for Sale</h1>
+    <!-- <h2>DRAFT OF AGREEMENT FOR SALE</h2> -->
+    <p>
+      THIS AGREEMENT FOR SALE is made and executed on this the
+      <label for="name">Name:</label> <input type="text" id="name" /> day
+      <input type="text" id="day" /> of <input type="text" id="month" />, 200-
+    </p>
+    <p>BETWEEN</p>
+    <p>
+      Mr. <input type="text" id="seller_name" /> s/o.
+      <input type="text" id="seller_father_name" /> aged
+      <input type="text" id="seller_age" /> years residing at
+      <input type="text" id="seller_address" /> Hereinafter called "The SELLER"
+      (which expression shall mean and include her legal heirs, successors,
+      successors-in-interest, executors, administrators, legal representatives,
+      attorneys, and assigns) of ONE PART.
+    </p>
+    <p>AND</p>
+    <p>
+      Mr. <input type="text" id="purchaser_name" /> s/o
+      <input type="text" id="purchaser_father_name" /> aged­
+      <input type="text" id="purchaser_age" /> years residing at
+      <input type="text" id="purchaser_address" /> Hereinafter referred as "The
+      PURCHASER" (represented by his power of attorney) which expression shall
+      mean and include his heirs, successors, executors, administrators, legal
+      representatives, attorneys, and assigns of the OTHER PART.
+    </p>
+    <p>
+      WHEREAS THE SELLER is the absolute owner in possession and enjoyment of
+      the more fully described in the schedule hereunder and hereafter called
+      the "SCHEDULE PROPERTY."
+    </p>
+    <p>
+      WHEREAS the property more fully described in the schedule hereunder is the
+      self-acquired property of the SELLER who purchased the same from Mr.
+      <input type="text" id="previous_owner_name" /> in and by sale deed dated
+      <input type="text" id="sale_deed_date" /> and registered as Doct No.<input
+        type="text"
+        id="doc_no"
+      />
+      of Book 1 Volume No<input type="text" id="volume_no" />Page No<input
+        type="text"
+        id="page_no"
+      />, registered on and filed on the file of the Sub-Registrar,
+    </p>
+    <p>
+      WHEREAS the SELLER is the absolute owner of the property and he has been
+      enjoying the same with absolute right and he has clear and marketable
+      title to the Schedule Property
+    </p>
+    <p>
+      WHEREAS the SELLER being in need of funds for the purpose of
+      <input type="text" id="purpose" /> has decided to sell the property more
+      fully described in the Schedule hereunder and the PURCHASER has offered to
+      purchase the same.
+    </p>
+    <p>
+      WHEREAS the SELLER offered to sell and transfer the schedule property to
+      the PURCHASER for a sale consideration of Rs.<input
+        type="text"
+        id="sale_amount"
+      />(Rupees<input type="text" id="sale_amount_words" /> only) and the
+      PURCHASER herein has agreed to purchase the same for the aforesaid
+      consideration on the following terms and conditions:
+    </p>
+    <p>NOW THIS AGREEMENT WITNESSETH AS FOLLOWS:</p>
+    <ol>
+      <li>
+        The Sale consideration of the Schedule Property is fixed at Rs.
+        <input type="text" id="consideration_amount" />(Rupees<input
+          type="text"
+          id="consideration_amount_words"
+        />
+        only).
+      </li>
+      <li>
+        The PURCHASER has paid a sum of Rs.<input
+          type="text"
+          id="advance_amount"
+        />(Rupees<input type="text" id="advance_amount_words" /> only) by
+        cash/cheque/D.D. bearing No <input type="text" id="cheque_no" />.
+      </li>
+    </ol>
+    <h3>
+      IN WITNESS WHEREOF the SELLER and the PURCHASER have signed this Agreement
+      of Sale on the
+      <input type="text" name="agreement_day" placeholder="day" />,
+      <input type="text" name="agreement_month" placeholder="month" />, and
+      <input type="text" name="agreement_year" placeholder="year" /> herein
+      above mentioned in the presence of the witnesses:
+    </h3>
+    <h4>WITNESSES:</h4>
+    <ol>
+      <li>
+        <input type="text" name="witness1" placeholder="Witness 1 Name" />
+      </li>
+      <li>
+        <input type="text" name="witness2" placeholder="Witness 2 Name" />
+      </li>
+    </ol>
+    <h4>
+      Signed by SELLER
+      <input
+        type="file"
+        id="seller_signature"
+        name="seller_signature"
+        accept="image/*"
+        placeholder="Seller Signature"
+        required
+      />
+    </h4>
+    <p>In the presence of</p>
+    <h4>
+      Signed by PURCHASER
+      <input
+        type="file"
+        name="purchaser_signature"
+        name="purchaser_signature"
+        accept="image/*"
+        placeholder="Purchaser Signature"
+        required
+      />
+    </h4>
+    <p>In the presence of</p>
+    <button type="submit" value="submit">Submit</button>
+  </body>
+</html>
+<br />
+<br />
+<br />
+<br />
+
+{% endblock %}
+<!-- <label for="sellerSignature">Seller's Signature:</label>
+    <input type="file" id="sellerSignature" name="sellerSignature" accept="image/*" required>
+
+    <label for="purchaserSignature">Purchaser's Signature:</label>
+    <input type="file" id="purchaserSignature" name="purchaserSignature" accept="image/*" required> -->

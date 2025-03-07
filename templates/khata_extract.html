@@ -1,0 +1,242 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Real Estate</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon" />
+    <link
+      href="{% static 'assets/img/apple-touch-icon.png' %}"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="{% static 'assets/vendor/animate.css/animate.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: EstateAgency
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <!-- ======= Header/Navbar ======= -->
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button
+        class="navbar-toggler collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarDefault"
+        aria-controls="navbarDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="index.html"
+        >MAHA-<span class="color-b">Real Estate</span></a
+      >
+
+      <div
+        class="navbar-collapse collapse justify-content-center"
+        id="navbarDefault"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">login</a>
+          </li>
+
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="signup.html">Signup</a>
+            </li> -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <button
+          type="button"
+          class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+        >
+          <i class="bi bi-search"></i>
+        </button> -->
+    </div>
+  </nav>
+  <!-- End Header/Navbar -->
+  <br />
+  <br />
+  <br />
+  <br /><br />
+  <br />
+  <br />
+  <br />
+<head>
+  <title>Khata Certificate and Extract Form </title>
+</head>
+<body>
+  <h1>Khata Certificate and Extract Request Form co.Tahsil office</h1>
+  This a document that verifies the ownership details of a property. It provides information about the property owner, property size, property type, and other relevant details.
+  The Khata Certificate is typically required for various administrative and legal purposes, such as obtaining trade licenses, building permits, or applying for loans.
+  contains the complete details of a property, including ownership information, property assessment, property tax details, and other relevant information. 
+  It is an important document for property transactions, as it verifies the authenticity of the property and ensures that there are no legal disputes or pending dues associated with it.</h6><br>
+  <form action="submit.php" method="POST">
+    <h2>Applicant Details</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <h2>Property Details</h2>
+    <label for="property_address">Property Address:</label>
+    <textarea id="property_address" name="property_address" rows="4" cols="50" required></textarea><br><br>
+
+    <label for="property_owner">Property Owner:</label>
+    <input type="text" id="property_owner" name="property_owner" required><br><br>
+
+    <label for="property_size">Property Size:</label>
+    <input type="text" id="property_size" name="property_size" required><br><br>
+
+    <label for="property_type">Property Type:</label>
+    <select id="property_type" name="property_type" required>
+      <option value="">Select Property Type</option>
+      <option value="Residential">Residential</option>
+      <option value="Commercial">Commercial</option>
+      <option value="Industrial">Industrial</option>
+      <option value="Agricultural">Agricultural</option>
+    </select><br><br>
+
+    <h2>Additional Information</h2>
+    <label for="purpose">Purpose of Khata Certificate and Extract:</label>
+    <textarea id="purpose" name="purpose" rows="4" cols="50" required></textarea><br><br>
+
+    <h2>Required Documents</h2>
+    <p>Attach the following documents:</p>
+    
+    <input type="checkbox" id="chk_application_form" name="chk_application_form">
+    <label for="chk_application_form">Completed Application Form</label><br>
+
+    <input type="checkbox" id="chk_proof_identity" name="chk_proof_identity">
+    <label for="chk_proof_identity">Proof of Identity (Choose one):</label><br>
+    <input type="checkbox" id="chk_aadhaar_card" name="chk_aadhaar_card">
+    <label for="chk_aadhaar_card">Aadhaar Card</label><br>
+    <input type="checkbox" id="chk_passport" name="chk_passport">
+    <label for="chk_passport">Passport</label><br>
+    <input type="checkbox" id="chk_voter_id" name="chk_voter_id">
+    <label for="chk_voter_id">Voter ID Card</label><br>
+    <input type="checkbox" id="chk_driving_license" name="chk_driving_license">
+    <label for="chk_driving_license">Driving License</label><br>
+    <input type="checkbox" id="chk_pan_card" name="chk_pan_card">
+    <label for="chk_pan_card">PAN Card</label><br>
+
+    <input type="checkbox" id="chk_proof_address" name="chk_proof_address">
+    <label for="chk_proof_address">Proof of Address (Choose one):</label><br>
+    <input type="checkbox" id="chk_aadhaar_address" name="chk_aadhaar_address">
+    <label for="chk_aadhaar_address">Aadhaar Card</label><br>
+    <input type="checkbox" id="chk_voter_id_address" name="chk_voter_id_address">
+    <label for="chk_voter_id_address">Voter ID Card</label><br>
+    <input type="checkbox" id="chk_utility_bills" name="chk_utility_bills">
+    <label for="chk_utility_bills">Recent utility bills</label><br>
+    <input type="checkbox" id="chk_bank_statement" name="chk_bank_statement">
+    <label for="chk_bank_statement">Bank statement or passbook</label><br>
+    <input type="checkbox" id="chk_rent_agreement" name="chk_rent_agreement">
+    <label for="chk_rent_agreement">Rent agreement</label><br>
+
+    <input type="checkbox" id="chk_property_documents" name="chk_property_documents">
+    <label for="chk_property_documents">Property Documents:</label><br>
+    <input type="checkbox" id="chk_sale_deed" name="chk_sale_deed">
+    <label for="chk_sale_deed">Sale deed or conveyance deed</label><br>
+    <input type="checkbox" id="chk_property_tax_receipts" name="chk_property_tax_receipts">
+    <label for="chk_property_tax_receipts">Property tax receipts</label><br>
+    <input type="checkbox" id="chk_khata_transfer_documents" name="chk_khata_transfer_documents">
+    <label for="chk_khata_transfer_documents">Khata transfer documents</label><br>
+    <input type="checkbox" id="chk_encumbrance_certificate" name="chk_encumbrance_certificate">
+    <label for="chk_encumbrance_certificate">Encumbrance certificate</label><br>
+
+    <input type="checkbox" id="chk_property_ownership_proof" name="chk_property_ownership_proof">
+    <label for="chk_property_ownership_proof">Property Ownership Proof (Choose one):</label><br>
+    <input type="checkbox" id="chk_sale_deed_ownership" name="chk_sale_deed_ownership">
+    <label for="chk_sale_deed_ownership">Sale deed</label><br>
+    <input type="checkbox" id="chk_allotment_letter" name="chk_allotment_letter">
+    <label for="chk_allotment_letter">Allotment letter from the housing board</label><br>
+    <input type="checkbox" id="chk_possession_certificate" name="chk_possession_certificate">
+    <label for="chk_possession_certificate">Possession certificate</label><br>
+    <input type="checkbox" id="chk_lease_agreement" name="chk_lease_agreement">
+    <label for="chk_lease_agreement">Lease agreement</label><br>
+
+    <input type="checkbox" id="chk_site_plan_building_layout" name="chk_site_plan_building_layout">
+    <label for="chk_site_plan_building_layout">Site Plan and Building Layout</label><br>
+
+    <input type="checkbox" id="chk_photographs" name="chk_photographs">
+    <label for="chk_photographs">Recent passport-sized photographs</label><br>
+
+    <input type="checkbox" id="chk_other_documents" name="chk_other_documents">
+    <label for="chk_other_documents">Any Other Supporting Documents</label><br>
+
+    <br>
+
+    <label for="documents">Supporting Documents:</label>
+    <input type="file" id="documents" name="documents" multiple required><br><br>
+
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+<br />
+<br />
+<br />
+<br />
+
+{% endblock %}
