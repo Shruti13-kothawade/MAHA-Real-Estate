@@ -73,7 +73,7 @@ python manage.py migrate
 ```sh
 python manage.py createsuperuser
 ```
-Follow the prompts to create an admin user.
+Follow the steps to create an admin user.
 
 ### 6️⃣ Run the Development Server  
 ```sh
